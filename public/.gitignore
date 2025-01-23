@@ -1,0 +1,13 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+#Intala Prisma como devDependence
+bun i prisma -d
+
+#bunx  prisma init --datasource-provider [Bases de datos a utulizar]
+bunx  prisma init --datasource-provider sqlite
+
+#Agrega la extension Prima
+https://marketplace.visualstudio.com/items?itemName=Prisma.prisma
+
+#
