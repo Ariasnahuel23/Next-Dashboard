@@ -10,4 +10,49 @@ bunx  prisma init --datasource-provider sqlite
 #Agrega la extension Prima
 https://marketplace.visualstudio.com/items?itemName=Prisma.prisma
 
-#
+#Agrega un ejemplo en schema.prisma
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+}
+
+#Haz una migracion de la base de datos
+Bunx prisma migrate dev
+
+#Crea un archivo index.js enla raiz del proyecto
+
+#Agrega el tipo mudlo en el package.json
+"type": "module"
+
+Funciones de Prima:
+async: es un metodo asincrono ESPERA QUE CONCRETEMOS DETERMINADA ACCION
+Ejemplo:
+
+async const newUser =
+funtion main() {
+    await prima.[Modelo Relacional].[Metodo].
+
+}
+
+Metodos de Prisma
+
+count = contar 
+create = crear 
+delete = eliminar 
+delemany = 
+findFirst = encontrarPrimero 
+findFirstOrThrow = encontrarPrimeroOLanzar 
+findMany = encontrarMuchos 
+findUnique = encontrarÚnico 
+findUniqueOrThrow = encontrarÚnicoOLanzar 
+groupBy = agruparPor 
+update = actualizar 
+# update: Se utiliza para buscar(were) y actualizar(data) una fial a partir de un campo unico, ejemplo un id
+updateMany = actualizarMuchos 
+# updateMany: Se utiliza para buscar y actualizar por multiples filas a partir de una busqueda, ejemplo un id
+
+upsert = 
+# Buscar y si si no se encuentra concidencia crea una nueva tabla con los datos que le proporciono
+# Buscar(where) Crear(Create) Actualizar (update)
+

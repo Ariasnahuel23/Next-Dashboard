@@ -1,3 +1,5 @@
+import {NavBar} from "../../components/NavBar/NavBar";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -15,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dashboard",
   description: "Dashboard creado en next.js",
+
 };
 
 export default function RootLayout({
@@ -25,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <NavBar />
         {children}
       </body>
     </html>
